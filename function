@@ -1,0 +1,25 @@
+### C++ function 배움  
+
+#실습: 정수 2개를 입력하고, 두 번째 숫자가 첫 번째 숫자의 배수면 True반환하는 함수를 만들고 True를 반환하면 콘솔창에 Yes라고 입력되야 한다!
+
+#include <iostream>
+using namespace std;
+
+bool isMultiple(int x, int y){    //매개변수는 하나씩 변수타입을 적어야함
+  if(y%x==0) return true;       //return만 적으면 {}필요 없나봄 ㅎㅎ
+  else return false;
+}
+
+int main(){
+  int a,b;                    //int a, int b;는 안됨! 
+  cin >> a >> b;              //입력 받는 것 까먹지 않기
+  if (isMultiple(a,b)){       //{}중괄호 주의!!!
+        cout << "Yes" << endl;
+}
+  else{
+      cout << "No" <<endl;
+}
+
+  return 0;
+
+}
